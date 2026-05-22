@@ -10,8 +10,9 @@ import {
   Brain,
   Workflow,
 } from "lucide-react";
-
+import { TbBrandReactNative } from "react-icons/tb";
 import {
+  SiGithubcopilot,
   SiWordpress,
   SiNextdotjs,
   SiLaravel,
@@ -25,12 +26,13 @@ import {
   SiExpress,
   SiNodedotjs,
   SiBootstrap,
-  SiGithubcopilot,
   SiClaude,
   SiGooglegemini,
   SiGit,
   SiFigma,
   SiReact,
+  SiPython,
+  SiDjango,
 } from "react-icons/si";
 
 export const Route = createFileRoute("/tools")({
@@ -195,6 +197,25 @@ const tools = [
     Icon: Brain,
     color: "text-violet-500",
   },
+  {
+    name: "Python",
+    role: "AI Programming Language",
+    Icon: SiPython,
+    color: "text-violet-500",
+  },
+  {
+    name: "Django",
+    role: "Python Framework",
+    Icon: SiDjango,
+    color: "text-violet-500",
+  },
+   {
+    name: "React native",
+    role: "Mobile App Framework",
+    Icon: TbBrandReactNative,
+    color: "text-violet-500",
+  },
+  
 ];
 
 function ToolsPage() {
